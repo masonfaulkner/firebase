@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Empire.tv</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+	<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+</head>
+<body>
+	<header id="main-header">
+		<div class="container">
+		<h1><a href="../index.html">empire.tv</a></h1>
+		</div>
+	</header>
+	<div class="container">
+	<h3>Room does not Exist!</h3>
+	</div>
+	<div style="text-align:center">
+	
+		<!-- Modal -->
+		<div class="modal" id="simpleModal">
+			<div class="modal-content">
+				<span class="closeBtn">&times;</span>
+				<p>
+					Empire Rules
+					<ul>
+						<li>Each person types the name of a famous fiction or nonfiction person</li>
+						<li>The game displays each name twice and then never displays the name again</li>
+						<li>Players type the name in and select who they think the person is</li>
+						<li>If you guess the person correctly the person joins their empire</li>
+						<li>The other person can give suggestions to the head person of who they think each person is </li>
+						<li>If they get the question wrong it is that person who answered turn to go</li>
+						<li>The game ends when there is only one empire </li>
+					</ul>
+				</p>
+			</div>
+		</div>
+			
+	</div>
+	<script src="js/modal.js"></script>
+	<div class="container">
+		<a href="../html/createroom.html">Create Room?</a>
+		
+	</div>
+	<br>
+	<button class="btn" id="check-room">HOME</button>
+	<button id="modalBtn" class="btn">RULES</button>	
+
+	<footer id="main-footer">
+		<p>Copyright &copy; 2018 Sutri Technology LLC</p>
+	</footer>
+	
+</body>
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCui2OHYpjtvueb1ffSIUa19CuwcbSVs2o",
+    authDomain: "empire-1b08c.firebaseapp.com",
+    databaseURL: "https://empire-1b08c.firebaseio.com",
+    projectId: "empire-1b08c",
+    storageBucket: "",
+    messagingSenderId: "37826276936"
+  };
+  firebase.initializeApp(config);
+</script>
+
+</html>

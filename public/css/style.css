@@ -1,0 +1,221 @@
+
+
+body{
+	text-align: center;
+	background-color: cyan;
+    font-family: Boogaloo, cursive;
+	font-size: 1.5em;
+	
+}
+h1 a{
+	text-decoration: none;
+	color:#fff;
+}
+
+.container{
+	text-align: center;
+	font-size:2em;
+	margin:auto;
+	overflow-wrap: break-word;
+	text-decoration: none;
+	
+}
+
+#room-code{
+	text-align: center;
+	font-family: Boogaloo, cursive;
+	font-size: 2em;
+	background-position:center;
+	background-color: #32cd32;
+	background-size:50%
+}
+
+#main-header{
+	font-family: 'Boogaloo', cursive;
+	color:#fff;
+	background-color:#000;
+	text-decoration: none;
+}
+
+.form-group{
+	font-family: 'Boogaloo', cursive;
+	padding:20px;
+}
+
+.form-group{
+	text-align:center;
+	padding-bottom: 15px;
+	
+}
+
+.form-group label{
+	text-align:center;
+	margin-left: 10%;
+	padding:8px;
+	width:80%;
+	display:block;
+}
+
+.form-group input[type="text"]{
+	font-family: 'Boogaloo', cursive;
+	font-size: 28px;
+	padding:8px;
+	height:50px;
+	width:65%;
+	display: inline-block;
+}
+
+/* Customize the label (the container) */
+.container2 {
+	display: block;
+	position: absolute;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	margin-inline-start: 40%;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container2 input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container2:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container2 input:checked ~ .checkmark {
+	background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.container2 input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.container2 .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+} 
+
+.btn{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    width:auto;
+    text-align: center;
+    margin:auto;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.btn:hover{
+	background:rgb(105, 104, 104);
+}
+#join{
+	margin:0;
+	padding: 30px 32px;
+}
+
+.modal{
+	display:none;
+	text-align: left;
+	font-family: 'Courier New', Courier, monospace;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content{
+	background-color: #f4f4f4;
+	margin: 10%;
+	padding: 20px;
+	box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2);
+}
+
+.closeBtn{
+	color:rgb(126, 126, 126);
+	float:right;
+	font-size: 30px;
+}
+
+.closeBtn:hover, .closeBtn:focus {
+	color:#000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+ol {
+	text-align: left;
+	margin-inline-start: 30%;
+    background: #ff9999;
+	padding: 20px;
+	margin-inline-start: 25%;
+	margin-inline-end: 25%;
+}
+
+ol li {
+    background: #ffe5e5;
+    padding-left: 10%;
+	margin: 5px;
+	margin-inline-start: 5%;
+	margin-inline-end: 5%;
+}
+
+#main-footer{
+	background:#333;
+	color:#fff;
+	text-align: center;
+	padding:20px;
+	margin-top: 40px;
+}
+
+
+@media(max-width: 600px){
+	
+	#sidebar{
+		width: 100%;
+		float:none;
+	}
+}

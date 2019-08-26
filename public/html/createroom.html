@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>Empire.tv</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+	<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+</head>
+<body>
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyCui2OHYpjtvueb1ffSIUa19CuwcbSVs2o",
+			authDomain: "empire-1b08c.firebaseapp.com",
+			databaseURL: "https://empire-1b08c.firebaseio.com",
+			projectId: "empire-1b08c",
+			storageBucket: "",
+			messagingSenderId: "37826276936"
+		};
+		firebase.initializeApp(config);
+	</script>
+	<header id="main-header">
+		<div class="container">
+		<h1><a href="../index.html">empire.tv</a></h1>
+		</div>
+	</header>
+	
+	<h2>Room Code</h2>
+	<h2 style="font-size: 100%">(This is what your friends enter)</h2>
+	<div id="room-code">
+		<script src="../js/roomcode.js" type="text/javascript"></script>
+	</div>
+	<br><br>
+	
+	<div class="form-group">
+		<label>YOUR PLAYER NAME</label>
+		<input name="name" id="username" class="myinput" tabindex="2" placeholder="ENTER YOUR NAME" style="text-transform:uppercase;" maxlength="12" value="" autocapitalize="off" autocorrect="off" autocomplete="new-name" type="text">
+		<button class="btn" id="join">V</button>
+	</div>
+
+	<br>
+	
+	<!-- Modal -->
+	<div class="modal" id="simpleModal">
+		<div class="modal-content">
+			<span class="closeBtn">&times;</span>
+			<p style="font-weight:bold">
+				Empire Rules
+				<ul>
+					<li>Each person types the name of a famous fiction or nonfiction person</li>
+					<li>The game displays each name twice and then never displays the name again</li>
+					<li>Players type the name in and select who they think the person is</li>
+					<li>If you guess the person correctly the person joins their empire</li>
+					<li>The other person can give suggestions to the head person of who they think each person is </li>
+					<li>If they get the question wrong it is that person who answered turn to go</li>
+					<li>The game ends when there is only one empire </li>
+				</ul>
+			</p>
+		</div>
+	</div>
+	
+	<h3>PLAYER ROOM</h3>
+	<ol id="player-room">
+
+	</ol>
+	<div style="text-align:center">
+			<label class="container2">All Players Here
+					<input type="checkbox" checked="false">
+					<span class="checkmark"></span>
+				  </label>
+				  <br><br>
+		
+	</div>
+	<button class="btn">PLAY</button>
+	<button id="modalBtn" class="btn">RULES</button>
+	<script src="../js/modal.js"></script>
+
+
+	<footer id="main-footer">
+		<p>Copyright &copy; 2018 Sutri Technology LLC</p>
+	</footer>
+</body>
+
+<script src="../js/index.js"></script>
+</html>
